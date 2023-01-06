@@ -1,0 +1,16 @@
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\bin\Debug\Jack Of All Trade.exe.config
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\bin\Debug\Jack Of All Trade.exe
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\bin\Debug\Jack Of All Trade.pdb
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack Of All Trade.csproj.AssemblyReference.cache
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack Of All Trade.csproj.SuggestedBindingRedirects.cache
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack_Of_All_Trade.Properties.Resources.resources
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack Of All Trade.csproj.GenerateResource.cache
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack Of All Trade.csproj.CoreCompileInputs.cache
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack Of All Trade.exe
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack Of All Trade.pdb
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack_Of_All_Trade.LamanLogin.resources
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack_Of_All_Trade.TampilanAwal.resources
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack_Of_All_Trade.Regristasi.resources
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack_Of_All_Trade.halLapor.resources
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack_Of_All_Trade.cariAhli.resources
+D:\Matkul\pemrograman lanjut\Final Project\Jack Of All Trade\obj\Debug\Jack_Of_All_Trade.Riwayat.resources
