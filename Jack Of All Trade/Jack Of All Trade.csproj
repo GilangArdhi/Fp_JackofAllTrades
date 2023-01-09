@@ -33,9 +33,53 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +89,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.31\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cariAhli.cs">
@@ -53,11 +100,18 @@
     <Compile Include="cariAhli.Designer.cs">
       <DependentUpon>cariAhli.cs</DependentUpon>
     </Compile>
+    <Compile Include="dataUser.cs" />
     <Compile Include="HalLapor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HalLapor.Designer.cs">
       <DependentUpon>HalLapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="halPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="halPembayaran.Designer.cs">
+      <DependentUpon>halPembayaran.cs</DependentUpon>
     </Compile>
     <Compile Include="LihatRiwayat.cs">
       <SubType>Form</SubType>
@@ -70,6 +124,13 @@
     </Compile>
     <Compile Include="LamanLogin.Designer.cs">
       <DependentUpon>LamanLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MYDB.cs" />
+    <Compile Include="Percobaan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Percobaan.Designer.cs">
+      <DependentUpon>Percobaan.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -96,11 +157,17 @@
     <EmbeddedResource Include="HalLapor.resx">
       <DependentUpon>HalLapor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="halPembayaran.resx">
+      <DependentUpon>halPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LihatRiwayat.resx">
       <DependentUpon>LihatRiwayat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LamanLogin.resx">
       <DependentUpon>LamanLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Percobaan.resx">
+      <DependentUpon>Percobaan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Regristasi.resx">
       <DependentUpon>Regristasi.cs</DependentUpon>
@@ -113,6 +180,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -200,6 +268,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\setting icon%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0eb0fa9667a46e226615651efe7218a5-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log_out_t7g9x40xh28s_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambar_2023-01-04_161150033.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambar_2023-01-04_161150033 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambar_2023-01-04_133539225.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambar_2023-01-04_133710314.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambar_2023-01-04_133733098.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambar_2023-01-04_133820296.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambar_2023-01-06_095702190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Biru Terang Ilustrasi Datar Kebersihan Logo Jasa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

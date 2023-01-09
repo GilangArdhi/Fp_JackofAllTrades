@@ -39,22 +39,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.confirmPass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.BoxTelp = new System.Windows.Forms.TextBox();
+            this.boxTelp = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.boxKotaAsal = new System.Windows.Forms.TextBox();
+            this.lokasiUsers = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lokasiUser = new System.Windows.Forms.ComboBox();
-            this.mskSebagai = new System.Windows.Forms.ComboBox();
+            this.boxKotaAsal = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.btnSelanjutnya = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.boxGender = new System.Windows.Forms.ComboBox();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,7 +99,7 @@
             this.boxEmail.Location = new System.Drawing.Point(129, 303);
             this.boxEmail.Name = "boxEmail";
             this.boxEmail.Size = new System.Drawing.Size(207, 22);
-            this.boxEmail.TabIndex = 5;
+            this.boxEmail.TabIndex = 2;
             // 
             // label4
             // 
@@ -121,7 +117,7 @@
             this.boxPassword.Location = new System.Drawing.Point(129, 369);
             this.boxPassword.Name = "boxPassword";
             this.boxPassword.Size = new System.Drawing.Size(207, 22);
-            this.boxPassword.TabIndex = 7;
+            this.boxPassword.TabIndex = 3;
             // 
             // label5
             // 
@@ -139,7 +135,7 @@
             this.confirmPass.Location = new System.Drawing.Point(129, 440);
             this.confirmPass.Name = "confirmPass";
             this.confirmPass.Size = new System.Drawing.Size(207, 22);
-            this.confirmPass.TabIndex = 9;
+            this.confirmPass.TabIndex = 4;
             // 
             // label6
             // 
@@ -151,118 +147,67 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Nomor Telepon";
             // 
-            // BoxTelp
+            // boxTelp
             // 
-            this.BoxTelp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BoxTelp.Location = new System.Drawing.Point(395, 235);
-            this.BoxTelp.Name = "BoxTelp";
-            this.BoxTelp.Size = new System.Drawing.Size(207, 22);
-            this.BoxTelp.TabIndex = 11;
+            this.boxTelp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boxTelp.Location = new System.Drawing.Point(395, 235);
+            this.boxTelp.Name = "boxTelp";
+            this.boxTelp.Size = new System.Drawing.Size(207, 22);
+            this.boxTelp.TabIndex = 5;
+            this.boxTelp.TextChanged += new System.EventHandler(this.boxTelp_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(393, 281);
+            this.label7.Location = new System.Drawing.Point(393, 279);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 19);
             this.label7.TabIndex = 14;
             this.label7.Text = "Kota Asal";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // boxKotaAsal
+            // lokasiUsers
             // 
-            this.boxKotaAsal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.boxKotaAsal.Location = new System.Drawing.Point(395, 303);
-            this.boxKotaAsal.Name = "boxKotaAsal";
-            this.boxKotaAsal.Size = new System.Drawing.Size(207, 22);
-            this.boxKotaAsal.TabIndex = 13;
+            this.lokasiUsers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lokasiUsers.Location = new System.Drawing.Point(397, 369);
+            this.lokasiUsers.Name = "lokasiUsers";
+            this.lokasiUsers.Size = new System.Drawing.Size(207, 22);
+            this.lokasiUsers.TabIndex = 6;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(391, 347);
+            this.label8.Location = new System.Drawing.Point(393, 347);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(161, 19);
+            this.label8.Size = new System.Drawing.Size(57, 19);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Lokasi Tempat Tinggal";
+            this.label8.Text = "Alamat";
             // 
-            // label9
+            // boxKotaAsal
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(393, 418);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 19);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Masuk Sebagai";
-            // 
-            // lokasiUser
-            // 
-            this.lokasiUser.FormattingEnabled = true;
-            this.lokasiUser.Location = new System.Drawing.Point(395, 369);
-            this.lokasiUser.Name = "lokasiUser";
-            this.lokasiUser.Size = new System.Drawing.Size(207, 24);
-            this.lokasiUser.TabIndex = 19;
-            // 
-            // mskSebagai
-            // 
-            this.mskSebagai.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.mskSebagai.FormattingEnabled = true;
-            this.mskSebagai.Location = new System.Drawing.Point(395, 440);
-            this.mskSebagai.Name = "mskSebagai";
-            this.mskSebagai.Size = new System.Drawing.Size(207, 24);
-            this.mskSebagai.TabIndex = 20;
+            this.boxKotaAsal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.boxKotaAsal.FormattingEnabled = true;
+            this.boxKotaAsal.Items.AddRange(new object[] {
+            "Yogyakarta",
+            "Solo",
+            "Boyolali",
+            "Magelang"});
+            this.boxKotaAsal.Location = new System.Drawing.Point(397, 301);
+            this.boxKotaAsal.Name = "boxKotaAsal";
+            this.boxKotaAsal.Size = new System.Drawing.Size(207, 24);
+            this.boxKotaAsal.TabIndex = 7;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(127, 492);
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(391, 418);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 24);
+            this.label10.Size = new System.Drawing.Size(59, 19);
             this.label10.TabIndex = 21;
             this.label10.Text = "Gender";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(129, 529);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 20);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.Text = "Laki-laki";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(223, 529);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(99, 20);
-            this.checkBox2.TabIndex = 23;
-            this.checkBox2.Text = "Perempuan";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(328, 529);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(76, 20);
-            this.checkBox3.TabIndex = 24;
-            this.checkBox3.Text = "Lainnya";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(410, 529);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(176, 20);
-            this.checkBox4.TabIndex = 25;
-            this.checkBox4.Text = "Tidak Ingin Memberitahu";
-            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // btnSelanjutnya
             // 
@@ -311,27 +256,53 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // boxGender
+            // 
+            this.boxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.boxGender.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxGender.FormattingEnabled = true;
+            this.boxGender.Items.AddRange(new object[] {
+            "Laki-laki",
+            "Perempuan"});
+            this.boxGender.Location = new System.Drawing.Point(393, 440);
+            this.boxGender.Name = "boxGender";
+            this.boxGender.Size = new System.Drawing.Size(209, 24);
+            this.boxGender.TabIndex = 9;
+            // 
+            // backBtn
+            // 
+            this.backBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.backBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.ForeColor = System.Drawing.Color.Black;
+            this.backBtn.Location = new System.Drawing.Point(-4, -2);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.backBtn.Size = new System.Drawing.Size(62, 46);
+            this.backBtn.TabIndex = 29;
+            this.backBtn.Text = "◀";
+            this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
             // Regristasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1422, 846);
+            this.Controls.Add(this.backBtn);
+            this.Controls.Add(this.boxGender);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnSelanjutnya);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.mskSebagai);
-            this.Controls.Add(this.lokasiUser);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.boxKotaAsal);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.boxKotaAsal);
+            this.Controls.Add(this.lokasiUsers);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.BoxTelp);
+            this.Controls.Add(this.boxTelp);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.confirmPass);
             this.Controls.Add(this.label4);
@@ -344,7 +315,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Regristasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Regristasi";
+            this.Load += new System.EventHandler(this.Regristasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -364,20 +337,16 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox confirmPass;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox BoxTelp;
+        private System.Windows.Forms.TextBox boxTelp;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox boxKotaAsal;
+        private System.Windows.Forms.TextBox lokasiUsers;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox lokasiUser;
-        private System.Windows.Forms.ComboBox mskSebagai;
+        private System.Windows.Forms.ComboBox boxKotaAsal;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button btnSelanjutnya;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ComboBox boxGender;
+        private System.Windows.Forms.Button backBtn;
     }
 }
