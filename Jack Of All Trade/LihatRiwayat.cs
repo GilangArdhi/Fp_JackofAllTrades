@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace Jack_Of_All_Trade
 {
@@ -18,44 +17,9 @@ namespace Jack_Of_All_Trade
             InitializeComponent();
         }
 
-        MYDB db = new MYDB();
-        dataUser dtUser = new dataUser();
-
-        /*public void username()
-        {
-            string urname = riwayatEmail;
-            db.openConnection();
-            string query = ("SELECT `nama` FROM `users` WHERE `email` Like '" + "@Emil" + "'");
-            MySqlCommand command = new MySqlCommand(query, db.getConnection());
-            command.Parameters.Add("@Emil", MySqlDbType.VarChar).Value = urname;
-            MySqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
-            {
-                txtUser.Text = reader.GetValue(0).ToString();
-            }
-        }*/
-
         private void HalamanStory_Load(object sender, EventArgs e)
         {
-            dgHistory.DataSource = dtUser.historyList();
-            dgHistory.ColumnHeadersDefaultCellStyle.ForeColor = Color.Blue;
-            dgHistory.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Arial",
-               9, FontStyle.Bold);
-            dgHistory.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgHistory.EnableHeadersVisualStyles = false;
 
-            db.openConnection();
-            String urname = LamanLogin.setEmail;
-            MySqlCommand command = new MySqlCommand("SELECT `nama` FROM `users` WHERE `email`=@Emil", db.getConnection());
-            command.Parameters.Add("@Emil", MySqlDbType.VarChar).Value = urname;
-            MySqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
-            {
-                txtUser.Text = reader.GetValue(0).ToString();
-            }
-            reader.Close();
-            db.closeConnection();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -79,12 +43,7 @@ namespace Jack_Of_All_Trade
         {
             Form Lapor = new halLapor();
             Lapor.Show();
-            this.Close();
-        }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            this.Hide();
         }
     }
 }

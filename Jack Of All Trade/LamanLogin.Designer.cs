@@ -36,15 +36,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.loginEmail = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.RememberMe = new System.Windows.Forms.CheckBox();
             this.lupaPass = new System.Windows.Forms.LinkLabel();
             this.btnLogin1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.loginGoogle = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -70,7 +69,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Image = global::Jack_Of_All_Trade.Properties.Resources.ombak_removebg_preview;
             this.pictureBox4.Location = new System.Drawing.Point(3, 572);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(965, 374);
@@ -81,7 +80,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::Jack_Of_All_Trade.Properties.Resources.Dekor_removebg_preview;
             this.pictureBox3.Location = new System.Drawing.Point(-91, -14);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(239, 187);
@@ -92,7 +91,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::Jack_Of_All_Trade.Properties.Resources.Cincin_removebg_preview;
             this.pictureBox2.Location = new System.Drawing.Point(538, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(248, 173);
@@ -103,7 +102,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::Jack_Of_All_Trade.Properties.Resources.Login_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(130, 163);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(512, 480);
@@ -134,33 +133,30 @@
             this.label2.Text = "Selamat Datang";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtEmail
+            // loginEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtEmail.Location = new System.Drawing.Point(169, 239);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(351, 36);
-            this.txtEmail.TabIndex = 3;
-            this.txtEmail.Text = "Email...";
-            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Clicked);
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
+            this.loginEmail.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.loginEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.loginEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginEmail.ForeColor = System.Drawing.Color.Black;
+            this.loginEmail.Location = new System.Drawing.Point(169, 239);
+            this.loginEmail.Name = "loginEmail";
+            this.loginEmail.Size = new System.Drawing.Size(351, 32);
+            this.loginEmail.TabIndex = 3;
+            this.loginEmail.Text = "Username or Email...";
+            this.loginEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // txtPassword
+            // textBox1
             // 
-            this.txtPassword.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.Location = new System.Drawing.Point(169, 302);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(351, 36);
-            this.txtPassword.TabIndex = 4;
-            this.txtPassword.Text = "Password...";
-            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Clicked);
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            this.textBox1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.textBox1.Location = new System.Drawing.Point(169, 302);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(351, 32);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "Password...";
             // 
             // RememberMe
             // 
@@ -172,7 +168,6 @@
             this.RememberMe.TabIndex = 5;
             this.RememberMe.Text = "Remember Me";
             this.RememberMe.UseVisualStyleBackColor = true;
-            this.RememberMe.CheckedChanged += new System.EventHandler(this.RememberMe_CheckedChanged);
             // 
             // lupaPass
             // 
@@ -197,7 +192,7 @@
             this.btnLogin1.TabIndex = 7;
             this.btnLogin1.Text = "Login";
             this.btnLogin1.UseVisualStyleBackColor = true;
-            this.btnLogin1.Click += new System.EventHandler(this.btnLogin1_Click);
+            this.btnLogin1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -228,20 +223,6 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = " Click here";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(-4, 0);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnBack.Size = new System.Drawing.Size(62, 48);
-            this.btnBack.TabIndex = 13;
-            this.btnBack.Text = "◀";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // button1
             // 
@@ -282,7 +263,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1422, 846);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
@@ -291,17 +271,16 @@
             this.Controls.Add(this.btnLogin1);
             this.Controls.Add(this.lupaPass);
             this.Controls.Add(this.RememberMe);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.loginEmail);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LamanLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Halaman Login";
-            this.Click += new System.EventHandler(this.LamanLogin_Clicked);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -321,8 +300,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox loginEmail;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox RememberMe;
         private System.Windows.Forms.LinkLabel lupaPass;
         private System.Windows.Forms.Button btnLogin1;
@@ -331,6 +310,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button btnBack;
     }
 }
